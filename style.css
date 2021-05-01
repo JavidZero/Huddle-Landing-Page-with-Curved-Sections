@@ -1,0 +1,509 @@
+:root {
+    
+    /* Colors */
+
+    /* Primary */
+
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+
+    /* Neutral */
+
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--very-dark-cyan);
+}
+
+.container {
+    max-width: 144rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button,
+button:focus,
+button:active {
+    outline: none;
+}
+
+/* Navigation */
+.nav {
+    max-width: 134rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.btn-white {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--pink);
+    background-color: white;
+
+    color: var(--pink);
+    text-transform: capitalize;
+}
+
+
+/* header */
+.header {
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.header-text {
+    max-width: 102rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-text h1 {
+    margin-bottom: 2rem;
+}
+
+.header-text p {
+    max-width: 59rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.btn-pink {
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 2rem 8rem;
+    margin-bottom: 3rem;
+    border: none;
+    border-radius: 6rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    background-color: var(--pink);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-pink:hover {
+    background-color: var(--light-pink);
+}
+
+.header-img {
+    max-width: 102rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.header-img img {
+    width: 100%;
+}
+
+.header-followers {
+    max-width: 88rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-followers-item h1 {
+    font-size: 7.5rem;
+}
+
+.header-followers-item p {
+    color: var(--very-dark-cyan);
+    opacity: .7;
+    margin-bottom: 3rem;
+}
+
+.main {
+    width: 100%;
+}
+
+.feature-item {
+    width: 100%;
+}
+
+.item-blue {
+    background-color: var(--very-pale-blue);
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.item-reverse .flex {
+    flex-direction: row-reverse;
+}
+
+.bg {
+    width: 100%;
+    min-height: 15.8rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.bg-1 {
+    background-image: url("images/bg-section-top-desktop-1.svg");
+    background-position: bottom center;
+}
+
+.bg-2 {
+    background-image: url("images/bg-section-bottom-desktop-1.svg");
+    background-position: top center;
+}
+
+.bg-3 {
+    background-image: url("images/bg-section-top-desktop-2.svg");
+    background-position: bottom center;
+}
+
+.bg-4 {
+    background-image: url("images/bg-section-bottom-desktop-2.svg");
+    background-position: top center;
+}
+
+.feature-item .flex {
+    max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    gap: 5rem;
+}
+
+.feature-item-text {
+    width: 47%;
+}
+
+.feature-item-text h3 {
+    font-size: 3.3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item-text p {
+    font-size: 1.6rem;
+}
+
+.feature-item-img {
+    width: 40%;
+}
+
+.feature-item-img img {
+    width: 100%;
+}
+
+
+.ready {
+    max-width: 68rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ready h3 {
+    font-size: 3.3rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    background-color: var(--very-dark-cyan);
+    margin-top: -3px;
+    color: white;
+}
+
+.bg-5 {
+    background-image: url("images/bg-footer-top-desktop.svg");
+    background-position: bottom center;
+}
+
+.footer .flex {
+    padding: 6rem 2rem 3rem 2rem;
+    max-width: 124rem;
+    width: 100%;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.footer__text {
+    width: 32.5rem;
+}
+
+.footer__text .footer-logo {
+    margin-bottom: 2rem;
+}
+
+.footer__text p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.info li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.info li span {
+    font-size: 1.6rem;
+}
+
+ .social {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social li a {
+    color: white;
+}
+
+.social li a:hover {
+    color: blue;
+}
+
+.form {
+    max-width: 52rem;
+    width: 40%;
+}
+
+
+.form h4 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form p {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    max-width: 34rem;
+}
+
+.form form {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.form form label {
+    position: relative;
+}
+
+.form form label input{
+    max-width: 32rem;
+    padding: 1rem 2rem;
+    height: 4rem;
+}
+
+.form form .btn-pink {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    height: 4rem;
+    font-size: 1.6rem;
+}
+
+.form form label small {
+    font-size: 1.4rem;
+    color: var(--light-red);
+    opacity: .8;
+    display: none;
+}
+
+.form form.err label small {
+    display: block;
+}
+
+
+@media only screen and (max-width:750px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    /* Navigation */
+    .nav .flex{flex-direction: row;
+    }
+
+    .nav img {
+        width: 20rem;
+    }
+
+
+    /* header */
+
+    .header-text h1 {
+        font-size: 3rem;
+    }
+
+    .header-text p {
+        font-size: 1.6rem;
+    }
+
+    .btn-pink {
+        font-size: 1.6rem;
+        padding: 1.5rem 6rem;
+    }
+
+    /* Main */
+
+    .feature-item {
+        text-align: center;
+    }
+
+    .feature-item .flex {
+        gap: 2rem;
+    }
+
+    .feature-item-text {
+        width: 100%;
+    }
+
+    .feature-item-text h3 {
+        font-size: 2.4rem;
+    }
+
+    .feature-item-text p {
+        font-size: 1.45rem;
+    }
+
+    .feature-item-img {
+        width: 100%;
+    }
+
+    .item-reverse .flex {
+        flex-direction: column;
+    }
+
+    /* Ready */
+    .ready {
+        max-width: 68rem;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .ready h3 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /* Footer */
+    .footer {
+        background-color: var(--very-dark-cyan);
+        margin-top: -3px;
+        color: white;
+    }
+
+    .bg-5 {
+        background-image: url("images/bg-footer-top-desktop.svg");
+        background-position: bottom center;
+    }
+
+    .footer .flex {
+        flex-direction: column-reverse;
+        padding: 2rem 2rem 3rem 2rem;
+    }
+
+    .footer__text {
+        width: 100%;
+    }
+
+    .footer__text .footer-logo {
+        margin-bottom: 2rem;
+    }
+
+    .footer__text p {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .info li {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .info li span {
+        font-size: 1.6rem;
+    }
+
+    .form {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .form form {
+        justify-content: flex-end;
+    }
+
+    .form form label {
+        position: relative;
+        width: 100%;
+    }
+
+    .form form label input{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:375px) {    
+    .bg-1 {
+        background-image: url("images/bg-section-top-mobile-1.svg");
+        background-position: bottom center;
+    }
+
+    .bg-2 {
+        background-image: url("images/bg-section-bottom-mobile-1.svg");
+        background-position: top center;
+    }
+
+    .bg-3 {
+        background-image: url("images/bg-section-top-mobile-2.svg");
+        background-position: bottom center;
+    }
+
+    .bg-4 {
+        background-image: url("images/bg-section-bottom-mobile-2.svg");
+        background-position: top center;
+    }
+
+    .bg-5 {
+        background-image: url("images/bg-footer-top-mobile.svg");
+        background-position: bottom center;
+    }
+}
